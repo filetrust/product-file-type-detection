@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
-import logo from "../logo.svg";
 import ProcessFile from "../components/ProcessFile"
+import AppHeader from "./AppHeader";
 
 function App() {
   var [apiKey, setApiKey] = useState("v1j1jXSdPo8Z7iRW4H34va89ho9mt6KV5y9zezVn");
@@ -12,10 +12,8 @@ function App() {
 
     return (
       <>
-        <div className="app file-drop">
-          <div className="app-header">
-            <div className="logo"><img src={logo} alt="Logo" height="90" /></div>
-          </div>
+        <div className="app filedrop">
+          <AppHeader />
           <input type="text" placeholder="Api Key" onInput={onApiKeyChange} hidden />
           <ProcessFile apiKey={apiKey}/>
         </div>

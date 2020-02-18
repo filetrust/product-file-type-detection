@@ -8,13 +8,16 @@ import FileTypeDetectionSwag from "./components/fileTypeDetectionSwag";
 import {
     HashRouter as Router,
     Route,
+    Switch
 } from "react-router-dom";
 
 var Root = () => {
   return (
   <Router basename='/'>
+    <Switch>
     <Route path="/drop"><App /></Route>
-    <Route path="/" exact><FileTypeDetectionSwag /></Route>
+    <Route><FileTypeDetectionSwag /></Route>
+    </Switch>
   </Router>);
 }
 
