@@ -74,11 +74,11 @@
   },
   "homepage": "http://filetrust.github.io/product-file-type-detection",
   "scripts": {
-    "build-css": "node-sass --include-path ./src/ --include-path ./node_modules src/sass -o src/",
-    "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/sass -o src/ --watch --recursive",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && node scripts/build.js",
-    "start-js": "node scripts/start.js",
+    "start": "npm-run-all -p start:watch-css start:node-js",
+    "start:watch-css": "npm run start:watch-css:build-css && node-sass --include-path ./src --include-path ./node_modules src/sass -o src/ --watch --recursive",
+    "start:watch-css:build-css": "node-sass --include-path ./src/ --include-path ./node_modules src/sass -o src/",
+    "start:node-js": "node scripts/start.js",
+    "build": "npm run start:watch-css:build-css && node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
