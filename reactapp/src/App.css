@@ -179,6 +179,12 @@ body {
   opacity: 1;
   transform: translateY(0); }
 
+.swagger-ui input[type=text] {
+  font-size: 1.4rem; }
+
+.swagger-ui p {
+  font-size: 1.4rem; }
+
 .results-exit.results-exit-active {
   opacity: 0.01;
   transition: all 500ms ease-in;

@@ -6,9 +6,15 @@ import TopBar from "../shared/TopBar.js";
 
 var FileTypeDetectionSwag = () => {
     useEffect(() => {
-		setTimeout(function() {
-	  	  document.querySelector(".try-out button").click();		
-		  }, 400);		
+		var interval = setInterval(function() {
+            var button = document.querySelector(".try-out button");
+
+            if (button !== null)
+            {
+                button.click();		
+                clearInterval(interval)
+            }
+		  }, 10);		
     });
 
     return (
