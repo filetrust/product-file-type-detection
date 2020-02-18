@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/product-file-type-detection/static/css/main.ad4747c4.chunk.css",
+    "main.js": "/product-file-type-detection/static/js/main.2b634f74.chunk.js",
+    "main.js.map": "/product-file-type-detection/static/js/main.2b634f74.chunk.js.map",
+    "runtime-main.js": "/product-file-type-detection/static/js/runtime-main.9fbfe04d.js",
+    "runtime-main.js.map": "/product-file-type-detection/static/js/runtime-main.9fbfe04d.js.map",
+    "static/css/2.67d9df46.chunk.css": "/product-file-type-detection/static/css/2.67d9df46.chunk.css",
+    "static/js/2.7a40b6b9.chunk.js": "/product-file-type-detection/static/js/2.7a40b6b9.chunk.js",
+    "static/js/2.7a40b6b9.chunk.js.map": "/product-file-type-detection/static/js/2.7a40b6b9.chunk.js.map",
+    "index.html": "/product-file-type-detection/index.html",
+    "precache-manifest.d4d2e59e7ea0f2102748ed6e75b9a770.js": "/product-file-type-detection/precache-manifest.d4d2e59e7ea0f2102748ed6e75b9a770.js",
+    "service-worker.js": "/product-file-type-detection/service-worker.js",
+    "static/css/2.67d9df46.chunk.css.map": "/product-file-type-detection/static/css/2.67d9df46.chunk.css.map",
+    "static/css/main.ad4747c4.chunk.css.map": "/product-file-type-detection/static/css/main.ad4747c4.chunk.css.map",
+    "static/media/api.yaml": "/product-file-type-detection/static/media/api.980d9789.yaml",
+    "static/media/App.css": "/product-file-type-detection/static/media/roboto-regular-webfont.d96d07c1.woff2",
+    "static/media/logo.svg": "/product-file-type-detection/static/media/logo.f2df34b5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fbfe04d.js",
+    "static/css/2.67d9df46.chunk.css",
+    "static/js/2.7a40b6b9.chunk.js",
+    "static/css/main.ad4747c4.chunk.css",
+    "static/js/main.2b634f74.chunk.js"
+  ]
+}
