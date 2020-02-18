@@ -10,12 +10,12 @@
 
 **Question:** Where can I access the API?
 
-**Answer:** Check out [our swagger page](https://filetrust.github.io/product-file-type-detection/#/default/post_api_FileTypeDetection) that provides documentation on the API itself
+**Answer:** Check out [our swagger page](https://filetrust.github.io/product-file-type-detection/#/) that provides documentation on the API itself
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Question:** How can I upload multiple files for file type detection?
 
-**Answer:** Try out our [file type detection drop site](https://glasswall-file-type-detection.azurewebsites.net/). You can upload multiple files at once. By default our site uses the public key which activity is limited.
+**Answer:** Try out our [file type detection drop site](https://filetrust.github.io/product-file-type-detection/#/drop). You can upload multiple files at once. By default our site uses the public key which activity is limited.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------

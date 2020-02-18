@@ -7,8 +7,8 @@
 
 ### Steps
 - Clone this repo
-- npm install to install all required dependencies
-- npm start to star the local server (this project uses create-react-app)
+- `npm install` to install all required dependencies
+- `npm start` to star the local server (this project uses create-react-app)
 
 ## Getting Started
 
