@@ -3,13 +3,12 @@
 ## How to run locally
 
 ### Pre-requisites
-- Python 2+
+- npm
 
 ### Steps
-- Pull the branch
-- edit "run.py", change port if necessary
-- run "./run.py"
-- Browse to localhost:8000
+- Clone this repo
+- npm install to install all required dependencies
+- npm start to star the local server (this project uses create-react-app)
 
 ## Getting Started
 
