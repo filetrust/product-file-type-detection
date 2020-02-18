@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
-import App from "./components/App";
-import FileTypeDetectionSwag from "./components/fileTypeDetectionSwag";
+import Layout from "./components/shared/Layout";
+import DropApp from "./components/drop/DropApp";
+import FileTypeDetectionSwag from "./components/swagger/fileTypeDetectionSwag";
 
 import {
     HashRouter as Router,
@@ -15,7 +16,7 @@ var Root = () => {
   return (
   <Router basename='/'>
     <Switch>
-    <Route path="/drop"><App /></Route>
+    <Route path="/drop"><Layout><DropApp /></Layout></Route>
     <Route><FileTypeDetectionSwag /></Route>
     </Switch>
   </Router>);
