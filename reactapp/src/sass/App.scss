@@ -80,7 +80,6 @@ body {
 }
 
 .api-key-wrapper {
-  float:left;
   margin-top: 2em;
   position: absolute;
   left: 10px;
@@ -366,4 +365,122 @@ body {
   }
 }
 
+
+$coral : hsl(357, 44%, 71%);
+$validationBackgroundColour: $coral;
+$white : hsl(0,0,100%);
+$validationTextColour : $white;
+
+%after,
+%before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.validation-popup {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  white-space: normal;
+  background-color: $validationBackgroundColour;
+  color: $validationTextColour;
+  border-radius: 0.5rem;
+  box-shadow: $boxShadow1;
+  transform-origin: top;
+  transition: all 0.5s;
+
+  
+  &::after {
+    @extend %after;
+    left: 50%;
+    top: -0.8rem;
+    transform: translateX(-50%);
+    border-bottom: solid 0.8rem $validationBackgroundColour;
+    border-left: solid 0.8rem transparent;
+    border-right: solid 0.8rem transparent;
+  }
+
+
+  &.login-error {
+    padding: 1rem 2rem;
+    line-height: 1.6rem;
+    display: block;
+    transition: none;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.validation-enter {
+  opacity: 0;
+  padding: 0;
+  transform: scaleY(0.1);
+}
+
+.validation-enter-active, .validation-enter-done {
+  opacity: 1;
+  padding: 1rem;
+  transform: scaleY(1);
+  transition: all 0.3s ease-out;
+}
+
+.validation-exit {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.validation-exit-active, .validation-exit-done {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+span.validation-error {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin-top: 0.6rem;
+  text-align: center;
+  white-space: normal;
+  background-color: #d69598;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s; }
+  span.validation-error::after {
+    left: 50%;
+    top: -0.8rem;
+    transform: translateX(-50%);
+    border-bottom: solid 0.8rem #d69598;
+    border-left: solid 0.8rem transparent;
+    border-right: solid 0.8rem transparent; }
+  span.validation-error.field-validation-valid {
+    opacity: 0;
+    display: none; }
+  span.validation-error.field-validation-error {
+    padding: 1rem;
+    opacity: 1;
+    display: block; }
+  span.validation-error.login-error {
+    padding: 1rem 2rem;
+    line-height: 1.6rem;
+    display: block;
+    transition: none; }
+    span.validation-error.login-error::after {
+      display: none; }
+
+.settings-list-row span.validation-error:after {
+  left: 87%; }
+
+table span.validation-error.field-validation-error {
+  padding: 1rem 0.8rem;
+  line-height: 1.4rem;
+  display: table-cell; }
+
 @import "./swagger-ui";
+
+

@@ -2,7 +2,7 @@ import React from 'react';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 
-function FileAttributes({ fileName, fileExtension, fileType, fileSize }) {
+function ResultSectionTableRow({ fileName, fileExtension, fileType, fileSize }) {
 
   const truncatLength = 40;
   var truncated;
@@ -27,4 +27,4 @@ function FileAttributes({ fileName, fileExtension, fileType, fileSize }) {
   );
 }
 
-export default FileAttributes;
+export default ResultSectionTableRow;
