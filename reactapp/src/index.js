@@ -16,7 +16,7 @@ var Root = () => {
   return (
   <Router basename='/'>
     <Switch>
-    <Route path="/drop"><Layout><DropApp /></Layout></Route>
+    <Route path="/drop"><DropApp /></Route>
     <Route><FileTypeDetectionSwag /></Route>
     </Switch>
   </Router>);

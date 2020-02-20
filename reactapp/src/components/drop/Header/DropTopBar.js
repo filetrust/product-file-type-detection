@@ -1,15 +1,17 @@
 import React from "react";
-import TopBarNavigation from "./TopBarNavigation";
-import logo from "../../img/logo.svg";
+import logo from "../../../img/logo.svg";
 
-var TopBar = ({ onApiKeyChange, apiKey, usePublicKey, togglePublicKey }) => {
+import ApiKeyContainer from "./ApiKeyContainer";
+
+var DropTopBar = (props) => {
     return (
         <div className="app-header">
             {/* <TopBarNavigation />
             <div className="logo" tabIndex="1" ></div> */}
             <div className="logo"><img src={logo} alt="Logo" height="90" /></div>
+            <ApiKeyContainer {...props} />
         </div>
     );
 }
 
-export default TopBar;
+export default DropTopBar;

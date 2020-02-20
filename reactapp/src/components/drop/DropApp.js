@@ -1,20 +1,31 @@
 import React, { useState } from "react";
 import "../../App.css";
-import ProcessFile from "./ProcessFile"
+import TopBar from "./Header/DropTopBar";
+import Body from "./Body/DropAppBody";
 
 function DropApp() {
-  var [apiKey, setApiKey] = useState("v1j1jXSdPo8Z7iRW4H34va89ho9mt6KV5y9zezVn");
+  var [apiKey, setApiKey] = useState("");
+  var [usePublicKey, setUsePublicKey] = useState(true);
 
   var onApiKeyChange = event => {
       setApiKey(event.target.value);
   }
 
+  var togglePublicKey = () => {
+    setUsePublicKey(!usePublicKey);
+  }
+
     return (
       <>
-        <div className="app filedrop">
-          <input type="text" placeholder="Api Key" onInput={onApiKeyChange} hidden />
-          <ProcessFile apiKey={apiKey}/>
-        </div>
+        <TopBar 
+          apiKey={apiKey} 
+          setApiKey={setApiKey} 
+          usePublicKey={usePublicKey}
+           setUsePublicKey={setUsePublicKey} 
+           onApiKeyChange={onApiKeyChange} 
+           togglePublicKey={togglePublicKey} 
+        />
+        <Body apiKey={usePublicKey ? "v1j1jXSdPo8Z7iRW4H34va89ho9mt6KV5y9zezVn" : apiKey}/>
       </>
   );
 }

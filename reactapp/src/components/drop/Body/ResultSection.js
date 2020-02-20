@@ -1,7 +1,7 @@
 import React from "react";
 import FileAttributes from "./FileAttributes";
 
-function RenderResults(props) {
+function ResultSection(props) {
   return (
     <section className="results-section">
     <div className="file-attributes table-container">
@@ -24,4 +24,4 @@ function RenderResults(props) {
   );
 }
 
-export default RenderResults;
+export default ResultSection;

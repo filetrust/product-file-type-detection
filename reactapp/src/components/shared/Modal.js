@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
 import ClickHandler from "../../Events/ClickHandler.jsx";
-import PropTypes from "prop-types";
 const modalRoot = document.querySelector("#modalRoot");
 
 function ModalContents(props) {
@@ -29,15 +28,6 @@ Modal.defaultProps = {
     onClickOutside: () => { },
     onExitCallback: () => { },
     transitionTimeout: 300
-};
-
-Modal.propTypes = {
-    modalType: PropTypes.string,
-    isOpen: PropTypes.bool,
-    onClickInside: PropTypes.func,
-    onClickOutside: PropTypes.func,
-    onExitCallback: PropTypes.func,
-    transitionTimeout: PropTypes.number
 };
 
 export default Modal;

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../../App.css";
+import "../../../App.css";
 
-import DragAndDrop from "./DragAndDrop";
-import RenderResults from "./RenderResults";
-import { engineApi } from "../shared/api/engineApi";
-import LoadingIndicator from "../shared/LoadingIndicator";
+import DragAndDropContainer from "./DragAndDropContainer";
+import ResultSection from "./ResultSection";
+import { engineApi } from "../../shared/api/engineApi";
+import LoadingIndicator from "../../shared/LoadingIndicator";
 import { CSSTransition } from "react-transition-group";
 import JSZip from "jszip";
 const readZipAsync = (blob) => {
@@ -120,14 +120,14 @@ function ProcessFile(props) {
     return (
         <div className="app-body">
             <h1>Drag and drop files to determine their file type. Files in Zip's will be determined separately.</h1>
-            <DragAndDrop handleDrop={handleDrop}>
+            <DragAndDropContainer handleDrop={handleDrop}>
                 <div className="loading-container">
                     <LoadingIndicator key={6} loading={loading} />
                 </div>
-            </DragAndDrop>
+            </DragAndDropContainer>
             <CSSTransition in={filesProcessed} timeout={{ enter: 500, exit: 500 }} classNames="results">
                 <>
-                    {filesProcessed && <RenderResults results={results} />}
+                    {filesProcessed && <ResultSection results={results} />}
                 </>
             </CSSTransition>
         </div>

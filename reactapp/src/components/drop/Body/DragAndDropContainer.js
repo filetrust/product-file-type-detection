@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function DragAndDrop(props) {
+function DragAndDropContainer(props) {
   var [drag, setDrag] = useState(false);
   var [dragCounter, setDragCounter] = useState(false);
 
@@ -66,4 +66,4 @@ function DragAndDrop(props) {
       </div>
     );
 }
-export default DragAndDrop;
+export default DragAndDropContainer;

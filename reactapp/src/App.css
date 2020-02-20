@@ -212,6 +212,35 @@ body {
   background: linear-gradient(to left, #196480, #0c3450);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
+.api-key-wrapper {
+  float: left;
+  margin-top: 2em;
+  position: absolute;
+  left: 10px;
+  top: 55px; }
+
+.api-key-input {
+  border-radius: 1em;
+  min-width: 350px;
+  text-align: center; }
+
+.api-key-wrapper label {
+  font-size: 1.8em; }
+
+.use-public-api-key-input {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer; }
+
+.use-public-api-key-input:checked {
+  background-color: #0c3450; }
+
 .app-body {
   height: calc(100vh - 100px);
   display: flex;
