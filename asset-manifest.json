@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/product-file-type-detection/static/css/main.fb21c63b.chunk.css",
-    "main.js": "/product-file-type-detection/static/js/main.135cf1c6.chunk.js",
-    "main.js.map": "/product-file-type-detection/static/js/main.135cf1c6.chunk.js.map",
+    "main.css": "/product-file-type-detection/static/css/main.46c59820.chunk.css",
+    "main.js": "/product-file-type-detection/static/js/main.fa7477a4.chunk.js",
+    "main.js.map": "/product-file-type-detection/static/js/main.fa7477a4.chunk.js.map",
     "runtime-main.js": "/product-file-type-detection/static/js/runtime-main.9fbfe04d.js",
     "runtime-main.js.map": "/product-file-type-detection/static/js/runtime-main.9fbfe04d.js.map",
     "static/css/2.67d9df46.chunk.css": "/product-file-type-detection/static/css/2.67d9df46.chunk.css",
-    "static/js/2.57834f48.chunk.js": "/product-file-type-detection/static/js/2.57834f48.chunk.js",
-    "static/js/2.57834f48.chunk.js.map": "/product-file-type-detection/static/js/2.57834f48.chunk.js.map",
+    "static/js/2.60d2a5ee.chunk.js": "/product-file-type-detection/static/js/2.60d2a5ee.chunk.js",
+    "static/js/2.60d2a5ee.chunk.js.map": "/product-file-type-detection/static/js/2.60d2a5ee.chunk.js.map",
     "index.html": "/product-file-type-detection/index.html",
-    "precache-manifest.9d910c6db358068a6c2b2f134619b740.js": "/product-file-type-detection/precache-manifest.9d910c6db358068a6c2b2f134619b740.js",
+    "precache-manifest.961eea7d8ebcb3ca6e0f402bb361814b.js": "/product-file-type-detection/precache-manifest.961eea7d8ebcb3ca6e0f402bb361814b.js",
     "service-worker.js": "/product-file-type-detection/service-worker.js",
     "static/css/2.67d9df46.chunk.css.map": "/product-file-type-detection/static/css/2.67d9df46.chunk.css.map",
-    "static/css/main.fb21c63b.chunk.css.map": "/product-file-type-detection/static/css/main.fb21c63b.chunk.css.map",
+    "static/css/main.46c59820.chunk.css.map": "/product-file-type-detection/static/css/main.46c59820.chunk.css.map",
     "static/media/api.yaml": "/product-file-type-detection/static/media/api.980d9789.yaml",
     "static/media/App.css": "/product-file-type-detection/static/media/roboto-regular-webfont.d96d07c1.woff2",
     "static/media/logo.svg": "/product-file-type-detection/static/media/logo.f2df34b5.svg"
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.9fbfe04d.js",
     "static/css/2.67d9df46.chunk.css",
-    "static/js/2.57834f48.chunk.js",
-    "static/css/main.fb21c63b.chunk.css",
-    "static/js/main.135cf1c6.chunk.js"
+    "static/js/2.60d2a5ee.chunk.js",
+    "static/css/main.46c59820.chunk.css",
+    "static/js/main.fa7477a4.chunk.js"
   ]
 }
